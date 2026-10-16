@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #131826;
+    height: 100dvh;
+    overflow: hidden;
+    user-select: none;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    color: #aec4fe;
+    left: 20px;
+    padding: 10px 20px;
+    border: 1px solid #0f85fa;
+    border-radius: 16px;
+    background: #0f85fa3b;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
