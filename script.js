@@ -30,3 +30,21 @@ function updateTime() {
 
     date.innerHTML = dateFormate
 }
+
+let searchBar = document.getElementById("search_bar")
+let searchInput = document.getElementById("search_input_area")
+
+searchBar.addEventListener("submit", function(event) {
+    event.preventDefault()
+
+    let resultText = searchInput.value.trim()
+
+    if (resultText !== "") {
+        let googleURL = "https://www.google.com/search?q=" + encodeURIComponent(resultText) 
+
+        // window.location.href = googleURL
+        window.open(googleURL, "_blank")
+
+        searchInput.value = ""
+    }
+})
